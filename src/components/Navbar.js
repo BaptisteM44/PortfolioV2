@@ -6,9 +6,8 @@ function Navbar() {
 
   return (
     <div className="navbar" >
-      <div className="toggleButton">
-        <button>
-        </button>
+      <div className="name">
+      <Link to="/"> Home </Link>
       </div>
       <div className="links">
         <Link to="/"> Home </Link>

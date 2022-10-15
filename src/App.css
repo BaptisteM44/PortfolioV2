@@ -1,9 +1,12 @@
 .App {
   text-align: center;
-  
+  text-decoration: none;
 }
 body{
   background: url(../src/assets/nnnoise.svg);
   background-attachment: fixed;
   color: aliceblue;
+}
+.mainPage{
+  margin: auto 50px;
 }

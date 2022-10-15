@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    align-items: center;
+    mix-blend-mode: difference;
+}
+.name .links{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}

@@ -9,15 +9,18 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDisplay />} />
-        </Routes>
-        <Footer />
-      </Router>
+        <Router>
+          <main className="mainPage">
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project/:id" element={<ProjectDisplay />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          <Footer />
+          </main>
+        </Router>
+      
     </div>
   );
 }

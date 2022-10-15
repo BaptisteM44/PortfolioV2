@@ -4,6 +4,6 @@
 }
 .bgImage{
     width: 300px;
-    height: 300px;
+    height: 100px;
     object-fit: cover;
 }
