@@ -1,9 +1,44 @@
-.home_main{
-    height: 100vh;
-}
+/* .home_main{
+    
+} */
 .home_page_presentation{
+    height: 100vh;
     padding-top: 50px;
 }
 .top_navbar{
-    margin: 50px ;
+    margin: 50px 0px 0px 21% ;
+    font-size: 22px;
+}
+.home_title{
+    font-size: 120px;
+    height: 150px;
+    font-weight: 600;
+    margin: 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.home_img{
+    width: 800px;
+    height: 350px;
+    background: black;
+    margin-right: 0%;
+    float: right;
+}
+.interest{
+    height: 100vh;
+}
+.interest_first{
+    display: flex;
+    justify-content: space-between;
+}
+.interest_about_title{
+    font-size: 22px;
+    display: block;
+    margin: 0;
+    font-weight:200;
+}
+.interest_prompt{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0px;
 }

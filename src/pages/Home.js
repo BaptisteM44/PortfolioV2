@@ -10,12 +10,24 @@ function Home() {
         <p>From Nantes, based in Brussels</p>
       </div>
       <section className="home_page_presentation">
-        <div className="about">
-          <h2> Hi, My Name is Pedro</h2>
-          <div className="prompt">
-            <p>A software developer with a passion for learning and creating.</p>
-          </div>
+        <div className="home">
+          <h2 className="home_title">Front-end</h2>
+          <h2 className="home_title">Developer</h2>
         </div>
+        <div className="home_img">
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section className="interest">
+        <div className="interest_first">
+          <div className="interest_about">
+            <h2 className="interest_about_title">About</h2>
+          </div>
+          <div className="interest_prompt">
+            <p>Hello, i am Baptiste Morvan a front-end developer from Brussels.</p>
+          </div>  
+        </div>
+        
       </section>
       <div className="projectList">
         {ProjectList.map((project, idx) => {

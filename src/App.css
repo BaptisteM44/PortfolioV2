@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-  text-decoration: none;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Satoshi', sans-serif;
+
 }
 body{
   background: url(../src/assets/nnnoise.svg);
@@ -8,5 +9,5 @@ body{
   color: aliceblue;
 }
 .mainPage{
-  margin: auto 50px;
+  margin: auto 70px;
 }

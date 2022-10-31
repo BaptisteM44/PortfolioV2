@@ -7,12 +7,12 @@ function Navbar() {
   return (
     <div className="navbar" >
       <div className="name">
-      <Link to="/"> Home </Link>
+      <Link className="links_navbar" to="/"> Baptiste Morvan </Link>
       </div>
       <div className="links">
-        <Link to="/"> Home </Link>
-        <Link to="/projects"> Projects </Link>
-        <Link to="/experience"> Experience </Link>
+        <Link className="links_navbar" to="/"> Home </Link>
+        <Link className="links_navbar" to="/projects"> Projects </Link>
+        <Link className="links_navbar" to="/experience"> Experience </Link>
       </div>
     </div>
   );
