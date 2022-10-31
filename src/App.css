@@ -1,7 +1,7 @@
 .App {
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Satoshi', sans-serif;
-
+  letter-spacing: -.03vw;
 }
 body{
   background: url(../src/assets/nnnoise.svg);

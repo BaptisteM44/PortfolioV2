@@ -28,17 +28,30 @@
     height: 100vh;
 }
 .interest_first{
+    height: 50%;
     display: flex;
-    justify-content: space-between;
+}
+.interest_about{
+    width: 20%;
 }
 .interest_about_title{
     font-size: 22px;
-    display: block;
     margin: 0;
-    font-weight:200;
+    font-weight: 200;
+    margin-left: 6px;
 }
-.interest_prompt{
-    font-size: 24px;
+/* .interest_prompt{
+    width: 80%;
+    font-size: 30px;
     font-weight: 400;
-    margin: 20px 0px;
+    line-height: 1.1;
+    max-width: 38vw;
+} */
+.interest_prompt_text{
+    width: 80%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    max-width: 38vw;
+    margin-block-start: 0em;
 }

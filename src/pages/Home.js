@@ -24,7 +24,9 @@ function Home() {
             <h2 className="interest_about_title">About</h2>
           </div>
           <div className="interest_prompt">
-            <p>Hello, i am Baptiste Morvan a front-end developer from Brussels.</p>
+            <p className="interest_prompt_text">Hello, i am Baptiste Morvan a front-end developer from Brussels.</p>
+            <p className="interest_prompt_text">Always interested in learning new technologies and new languages</p>
+            <p className="interest_prompt_text">I am looking for a job in Brussels, and I am free as soon as possible.</p>
           </div>  
         </div>
         
