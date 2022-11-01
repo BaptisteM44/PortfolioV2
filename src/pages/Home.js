@@ -29,15 +29,35 @@ function Home() {
             <p className="interest_prompt_text">I am looking for a job in Brussels, and I am free as soon as possible.</p>
           </div>  
         </div>
+        <div className="interest_skills">
+          <article className="interest_skills_item">
+            <h2>Titre item</h2>
+            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
+          </article>
+          <article className="interest_skills_item">
+            <h2>Titre item</h2>
+            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
+          </article>
+          <article className="interest_skills_item">
+            <h2>Titre item</h2>
+            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
+          </article>
+          <article className="interest_slide">
+            <p>My work slide down</p>
+          </article>
+        </div>
         
       </section>
-      <div className="projectList">
-        {ProjectList.map((project, idx) => {
-          return (
-            <ProjectItem id={idx} name={project.name} image={project.image} />
-          );
-        })}
-      </div>
+      <section>
+        <div className="projectList">
+          {ProjectList.map((project, idx) => {
+            return (
+              <ProjectItem id={idx} name={project.name} image={project.image} />
+            );
+          })}
+        </div>  
+      </section>
+      
     </div>
   );
 }

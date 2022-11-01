@@ -24,8 +24,12 @@
     margin-right: 0%;
     float: right;
 }
+section{
+    border-top: 1px solid red;
+}
 .interest{
     height: 100vh;
+    border-top: 1px solid red;
 }
 .interest_first{
     height: 50%;
@@ -40,13 +44,9 @@
     font-weight: 200;
     margin-left: 6px;
 }
-/* .interest_prompt{
-    width: 80%;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.1;
-    max-width: 38vw;
-} */
+.interest_prompt{
+    align-self: flex-end;
+}
 .interest_prompt_text{
     width: 80%;
     font-size: 30px;
@@ -54,4 +54,18 @@
     line-height: 1.1;
     max-width: 38vw;
     margin-block-start: 0em;
+}
+.interest_skills{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.interest_skills_item{
+    width: 25%;
+    max-width: 350px;
+}
+.interest_slide{
+    font-size: 22px;
+    align-self: end;
 }
