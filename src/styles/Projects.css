@@ -1,9 +1,35 @@
 .projectItem{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    height: 230px;
+    border-bottom: 2px solid white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectItem_page{
+width: 50%;
+}
+.projectItem_title{
+    font-size: 100px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.projectItem_details{
+    align-items: center;
+    width: 5%;
+    align-self: end;
+    margin-bottom: 20px;
+}
+.projectItem_info{
+    font-size: 22px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-align: left;
 }
 .bgImage{
-    width: 300px;
+    width: 0%;
     height: 100px;
     object-fit: cover;
+    background: no-repeat;
 }

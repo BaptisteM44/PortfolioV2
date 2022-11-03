@@ -48,14 +48,17 @@ function Home() {
         </div>
         
       </section>
-      <section>
-        <div className="projectList">
+      <section className="project">
+        <div className="project_list">
           {ProjectList.map((project, idx) => {
             return (
-              <ProjectItem id={idx} name={project.name} image={project.image} />
+              <ProjectItem id={idx} name={project.name} image={project.image} info={project.info} date={project.date} />
             );
           })}
         </div>  
+      </section>
+      <section className="contact">
+
       </section>
       
     </div>
