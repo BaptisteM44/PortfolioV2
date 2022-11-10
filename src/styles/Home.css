@@ -1,6 +1,9 @@
-/* .home_main{
-    
-} */
+body{
+    margin: 0px;
+}
+.home{
+    height: 40%;
+}
 .home_page_presentation{
     height: 100vh;
     padding-top: 50px;
@@ -10,7 +13,7 @@
     font-size: 22px;
 }
 .home_title{
-    font-size: 120px;
+    font-size: clamp(70px, 120vw, 120px) ;
     height: 150px;
     font-weight: 400;
     margin: 0px 0px 0px;
@@ -18,11 +21,24 @@
 }
 
 .home_img{
-    width: 800px;
-    height: 350px;
+    height: 60%;
+    position: relative;
+}
+.home_img_background{
+    width: 700px;
+    height: 300px;
     background: black;
     margin-right: 0%;
     float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.home_img_content{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 350px;
 }
 section{
     border-top: 1px solid red;
@@ -71,6 +87,8 @@ section{
 }
 .project{
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
 }
 .project_list{
     margin: 40px auto;

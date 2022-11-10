@@ -1,13 +1,16 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
+import Navbar from "../components/Navbar";
+import Trombinoscope from "../assets/trombinoscope.png"
 import "../styles/Home.css";
 
 function Home() {
   return (
     <div className="home_main">
+      <Navbar />
       <div className="top_navbar">
-        <p>From Nantes, based in Brussels</p>
+        <p>Based in Brussels</p>
       </div>
       <section className="home_page_presentation">
         <div className="home">
@@ -15,7 +18,9 @@ function Home() {
           <h2 className="home_title">Developer</h2>
         </div>
         <div className="home_img">
-          <img src="" alt="" />
+            <p className="home_img_background">
+              <img className="home_img_content" src={Trombinoscope} alt="Trombinoscope" />
+            </p>
         </div>
       </section>
       <section className="interest">
@@ -48,7 +53,7 @@ function Home() {
         </div>
         
       </section>
-      <section className="project">
+      <section id="project" className="project">
         <div className="project_list">
           {ProjectList.map((project, idx) => {
             return (
@@ -57,7 +62,7 @@ function Home() {
           })}
         </div>  
       </section>
-      <section className="contact">
+      <section id="contact" className="contact">
 
       </section>
       
