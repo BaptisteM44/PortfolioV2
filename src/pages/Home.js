@@ -3,11 +3,12 @@ import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import Navbar from "../components/Navbar";
 import Trombinoscope from "../assets/trombinoscope.png"
+import Footer from "../components/Footer";
 import "../styles/Home.css";
 
 function Home() {
   return (
-    <div className="home_main">
+    <div id="home_main" className="home_main">
       <Navbar />
       <div className="top_navbar">
         <p>Based in Brussels</p>
@@ -65,6 +66,7 @@ function Home() {
       <section id="contact" className="contact">
 
       </section>
+      <Footer />
       
     </div>
   );
