@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ProjectItem({name, id, info, date, image}) {
+function ProjectItem({name, id, category, date, image}) {
   const navigate = useNavigate();
   return (
     <div
@@ -16,7 +16,7 @@ function ProjectItem({name, id, info, date, image}) {
       </div>
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
       <div className="projectItem_details">
-        <h2 className="projectItem_info">{info}</h2>
+        <h2 className="projectItem_info">{category}</h2>
         <h2 className="projectItem_info">{date}</h2>
       </div>
       

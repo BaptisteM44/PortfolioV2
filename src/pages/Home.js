@@ -58,7 +58,7 @@ function Home() {
         <div className="project_list">
           {ProjectList.map((project, idx) => {
             return (
-              <ProjectItem id={idx} name={project.name} image={project.image} info={project.info} date={project.date} />
+              <ProjectItem id={idx} name={project.name} image={project.image} category={project.category} date={project.date} />
             );
           })}
         </div>  

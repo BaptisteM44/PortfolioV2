@@ -6,7 +6,7 @@ export const ProjectList = [
         name: "Le Blaireau",
         image: Proj1,
         date: "2022",
-        info: "Vitrine",
+        category: "Vitrine",
         context: "Freelance",
         link: "https://leblaireau-barbier.fr/"
     },
@@ -14,7 +14,7 @@ export const ProjectList = [
         name: "Le bon pain",
         image: Proj2,
         date: "2022",
-        info: "Vitrine",
+        category: "Vitrine",
         context: "Freelance",
         link: "https://baptistem44.github.io/l-autre-pain/"
     },
@@ -23,13 +23,13 @@ export const ProjectList = [
         image: Proj2,
         date: "2022",
         context: "Freelance",
-        info: "Portfolio"
+        category: "Portfolio"
     },
     {
         name: "Social network",
         image: Proj2,
         date: "2021",
         context: "Freelance",
-        info: "Learn Project"
+        category: "Learn Project"
     },
 ]
