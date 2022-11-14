@@ -78,7 +78,7 @@ section{
 .interest_skills{
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .interest_skills_item{
