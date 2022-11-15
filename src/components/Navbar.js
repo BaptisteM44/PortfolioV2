@@ -4,7 +4,7 @@ import "../styles/Navbar.css";
 function Navbar() {
 
   return (
-    <div id="navbar" className="navbar" >
+    <header id="navbar" className="navbar" >
       <div className="name">
       <Link className="links_navbar" to="/"> Baptiste Morvan </Link>
       </div>
@@ -13,7 +13,7 @@ function Navbar() {
           <a className="links_navbar" href="#project">Project</a>
           <a className="links_navbar" href="#contact">Contact</a>
       </div>
-    </div>
+    </header>
   );
 }
 

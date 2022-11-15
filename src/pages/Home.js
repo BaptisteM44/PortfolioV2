@@ -2,6 +2,7 @@ import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 import Trombinoscope from "../assets/trombinoscope.png"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
@@ -63,9 +64,7 @@ function Home() {
           })}
         </div>  
       </section>
-      <section id="contact" className="contact">
-
-      </section>
+      <Contact />
       <Footer />
       
     </div>

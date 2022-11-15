@@ -12,7 +12,10 @@ function ProjectDisplay() {
     <div>
       <div className="project_display_sticky">
         <div className="project_display">
-        <button className="project_linkback" onClick={() => navigate(-1)}>Go back</button>
+        <button className="arrow" onClick={() => navigate(-1)}>Go back
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </button>
           <div className="project_all">
             <div className="project_content_part">
               <article className="project_description">

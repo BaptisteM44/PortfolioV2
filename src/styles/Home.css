@@ -11,7 +11,7 @@ body{
     height: 100vh;
 }
 .top_navbar{
-    margin: 50px 0px 0px 21% ;
+    margin: 20px 0px 0px 21% ;
     font-size: 22px;
 }
 .home_title{
@@ -45,6 +45,8 @@ body{
 
 }
 section{
+    padding-right: 40px;
+    padding-left: 40px;
     border-top: 1px solid red;
 }
 .interest{
@@ -95,9 +97,6 @@ section{
     justify-content: space-between;
 }
 .project_list{
-    margin: 40px auto;
+    margin: 0px auto;
     width: 100%;
-}
-.contact{
-    height: 80vh;
 }

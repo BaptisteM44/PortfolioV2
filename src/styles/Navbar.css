@@ -4,18 +4,17 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 50px;
-    left: 83px;
-    right: 83px;
     align-items: center;
     mix-blend-mode: difference;
     z-index: 10;
-    
+    margin: 0px 40px;
 }
 .links{
     display: flex;
     justify-content: space-between;
+    width: 210px;
 }
 .links_navbar {
     text-decoration: none;
