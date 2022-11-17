@@ -1,11 +1,10 @@
 .footer{
     height: 10vh;
     display: flex;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 300;
     align-items: center;
     justify-content: space-between;
-    
 }
 p{
     margin-block-start: 0em;
@@ -13,13 +12,16 @@ p{
 }
 .footer_link{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;;
 }
 .footer_link_item{
     margin: 0 5px;
     text-decoration: none;
     color: white;
+    width: fit-content;
+    transition: 0.5s;
+    position: relative;
 }
-/* .footer_law{
-font-size: 22px;
-} */
+.links_navbar::after, .footer_link_item::after{
+    transform: scaleX(0);
+}

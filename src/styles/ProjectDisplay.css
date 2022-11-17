@@ -7,24 +7,75 @@
     justify-content: space-between;
     overflow: scroll;
 }
-.arrow{
-    position: fixed;
-    top: 40px;
-    left: 40px;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-}
+  .arrow {
+    cursor: pointer;
+    height: 120px;
+    left: 70px;
+    top: 0px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    width: 20px;
+    z-index: 100;
+    color: aliceblue;
+    transform: rotate(180deg);
+  }
+  .arrow-top, .arrow-bottom {
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .arrow-top:after, .arrow-bottom:after {
+    background-color: rgb(0, 0, 0);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+  }
+  .arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  .arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  .arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  .arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
 .project_all{
-    height: 90vh;
-    overflow: scroll;
+    height: auto;
+}
+.project_content_part{
+    display: flex;
+    position: relative;
 }
 .project_description{
     width: 40%;
+    height: 100vh;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 120px;
+    justify-content: center;
     position: sticky;
     top: 0;
 }
@@ -38,18 +89,18 @@
     font-weight: 200;
 }
 .project_content{
-width: 60%;
-margin: 40px 0 40px 40px;
-}
-.project_content_part{
-    display: flex;
-    justify-content: space-between;
-    height: 90vh;
-    overflow: scroll;
+  width: 60%;
+  height: auto;
+  margin: 60px 0 40px 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .project_content_img{
-    object-fit: cover;
-    margin-bottom: 20px;
+  object-fit: cover;
+  height: auto;
+  width: auto;
+  margin-bottom: 20px;
 }
 .projectItem{
     display: flex;

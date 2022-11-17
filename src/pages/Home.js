@@ -19,10 +19,13 @@ function Home() {
           <h2 className="home_title">Front-end</h2>
           <h2 className="home_title">Developer</h2>
         </div>
-        <div className="home_img">
-            <p className="home_img_background">
-              <img className="home_img_content" src={Trombinoscope} alt="Trombinoscope" />
-            </p>
+        <div className="home_img_content">
+          <div className="home_img_arrow">
+            <span>↓</span>
+          </div>
+          <span className="home_img_background">
+            <img className="home_img" src={Trombinoscope} alt="Trombinoscope" />
+          </span>
         </div>
       </section>
       <section className="interest">

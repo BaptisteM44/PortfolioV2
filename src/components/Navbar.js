@@ -9,9 +9,9 @@ function Navbar() {
       <Link className="links_navbar" to="/"> Baptiste Morvan </Link>
       </div>
       <div className="links">
-          <a className="links_navbar" href="#top"> Home </a>
-          <a className="links_navbar" href="#project">Project</a>
-          <a className="links_navbar" href="#contact">Contact</a>
+          <a className="links_navbar firstHover" href="#top"> Home </a>
+          <a className="links_navbar firstHover" href="#project">Project</a>
+          <a className="links_navbar firstHover" href="#contact">Contact</a>
       </div>
     </header>
   );

@@ -4,9 +4,15 @@
   letter-spacing: -.03vw;
 }
 body{
-  background: url(../src/assets/nnnoise.svg);
-  background-attachment: fixed;
+  /* background: url(../src/assets/nnnoise.svg);
+  background-attachment: fixed; */
+  background-color: darkgray;
   color: aliceblue;
+}
+section{
+  padding-right: 60px;
+  padding-left: 60px;
+  border-top: 1px solid red;
 }
 /* .mainPage{
   padding-left: 40px;

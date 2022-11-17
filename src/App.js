@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { gsap } from "gsap";
 
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Home from "./pages/Home";
@@ -12,7 +13,18 @@ const Wrapper = ({children}) => {
     document.documentElement.scrollTo(0, 0);
   }, [location.pathname]);
   return children
-} 
+}
+const comp = useRef(); // create a ref for the root level element (we'll use it later)
+
+useLayoutEffect(() => {
+  
+  // -- ANIMATION CODE HERE --
+  
+  return () => { 
+    // cleanup code (optional)
+  }
+  
+}, []);
 
 function App() {
   return (
