@@ -14,7 +14,7 @@ function ProjectItem({name, id, category, date, image}) {
         <h1 className="projectItem_title">{name}</h1> 
         
       </div>
-      <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
+      {/* <div style={{ backgroundImage: `url(${image})` }} className="bgImage" /> */}
       <div className="projectItem_details">
         <h2 className="projectItem_info">{category}</h2>
         <h2 className="projectItem_info">{date}</h2>

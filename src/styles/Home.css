@@ -8,14 +8,14 @@ body{
     justify-content: center;
 }
 .home_page_presentation{
-    height: 93vh;
+    height: 100vh;
 }
 .top_navbar{
     margin: 10px 0px 0px 21% ;
     font-size: 22px;
 }
 .home_title{
-    font-size: clamp(70px, 120vw, 120px) ;
+    font-size: clamp(50px, 14vw, 120px);
     height: 150px;
     font-weight: 400;
     margin: 0px;
@@ -99,3 +99,47 @@ body{
     margin: 0px auto;
     width: 100%;
 }
+
+@media screen and (max-width : 576px){
+    /* .home_page_presentation{
+        height: 110vh;
+    } */
+    .home{
+        justify-content: end;
+    }
+    .home_title{
+        height: 1em;
+    }
+    .home_img_background{
+        width: 350px;
+        height: 200px;
+        top: 25px;
+    }
+    .home_img{
+        left: 0px;
+    }
+    .top_navbar{
+        display: none;
+    }
+    .interest{
+        height: auto;
+    }
+    .interest_first{
+        flex-direction: column;
+    }
+    .interest_prompt{
+        align-self: center;
+    }
+    .interest_prompt_text{
+        width: auto;
+        font-size: 22px;
+        max-width: 90%;
+    }
+    .interest_skills{
+        flex-direction: column;
+    }
+    .interest_skills_item{
+        width: auto;
+    }
+
+  }

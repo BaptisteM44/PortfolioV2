@@ -13,7 +13,7 @@
 }
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 210px;
 }
 .links_navbar {
@@ -23,4 +23,15 @@
     transition: 0.5s;
     position: relative;
     width: fit-content;
+    margin-left: 5px;
+}
+
+@media screen and (max-width : 576px){
+    .navbar{
+        top: 10px;
+        margin: 0px 10px;
+    }
+    .links_navbar{
+        font-size: 16px;
+    }
 }

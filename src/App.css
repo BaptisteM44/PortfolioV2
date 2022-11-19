@@ -18,3 +18,10 @@ section{
   padding-left: 40px;
   padding-right: 40px;
 } */
+
+@media screen and (max-width : 576px){
+  section{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
