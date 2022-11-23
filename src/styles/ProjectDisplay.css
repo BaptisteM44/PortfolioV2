@@ -122,6 +122,39 @@ width: auto;
     text-transform: uppercase;
     cursor: pointer;
 }
+.menu__item-link {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #000;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+  transition: 1.2s;
+}
+.menu__item-link:hover {
+	transition-duration: 0.3s;
+  color: aliceblue;
+  transition: 1.2s;
+  transform: scaleY(1.4);
+  transform: translateX(20px);
+}
+.menu__item-img {
+	pointer-events: none;
+	position: absolute;
+  object-fit: contain;
+	height: 40vh;
+	max-height: 400px;
+	opacity: 0;
+	left: 133%;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+	opacity: 1;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transition: all 0.4s;
+}
 .projectItem_details{
     align-items: center;
     width: 5%;

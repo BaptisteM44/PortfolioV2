@@ -6,12 +6,12 @@ import Contact from "../components/Contact";
 import Trombinoscope from "../assets/trombinoscope.png"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
-import TimelineSequence from "../components/TimelineSequence";
+// import TimelineSequence from "../components/TimelineSequence";
 
 function Home() {
   return (
     <div id="home_main" className="home_main">
-      <TimelineSequence />
+      
       <Navbar />
       <div className="top_navbar">
         <p>Based in Brussels</p>
@@ -25,7 +25,7 @@ function Home() {
           <div className="home_img_arrow">
             <span>↓</span>
           </div>
-          <span className="home_img_background">
+          <span className="home_img_background transiImg">
             <img className="home_img" src={Trombinoscope} alt="Trombinoscope" />
           </span>
         </div>

@@ -8,13 +8,16 @@ function TimelineSequence(props) {
 
     useEffect(() => {
 
-        gsap.to(".slider", {y:"-100%", duration: 2.2, ease: "expo.out",  delay: 2})
-        gsap.to(".slider2", {x:"-100%", duration: 2.2, ease: "expo.out", delay: 3})
-        gsap.to(".transi1",{y:"0%", duration: 2.2, ease: "expo.out", delay: 3, opacity:1} )
-        gsap.to(".transi2",{y:"0%", duration: 2.2, ease: "expo.out", delay: 3.4, opacity:1} )
-        gsap.to( ".home_img_arrow",{y:"0%", duration: 2.2, ease: "expo.out", delay: 3.4, opacity:1} )
-        gsap.to(".home_img_background",{x:"0%", duration: 2.2, ease: "expo.out", delay: 3.8, opacity:1} )
-        gsap.to(".navbar", {y:"0%", duration: 2.2, ease: "expo.out", delay: 4, opacity:1} )
+        gsap.to(".slider", {y:"-100%", duration: 2.2, ease: "expo.out",  delay: 1})
+        gsap.to(".slider2", {x:"-100%", duration: 2.2, ease: "expo.out", delay: 2})
+
+        gsap.fromTo(".transi1", {y:"100%", opacity:0}, {y:"0%", duration: 2.2, ease: "expo.out", delay: 2.5, opacity:1} )
+
+        gsap.fromTo(".transi2",{y:"100%", opacity:0},{y:"0%", duration: 2.2, ease: "expo.out", delay: 2.8, opacity:1} )
+        gsap.fromTo( ".home_img_arrow",{y:"100%", opacity:0},{y:"0%", duration: 2.2, ease: "expo.out", delay: 2.9, opacity:1} )
+        gsap.fromTo(".transiImg",{x:"100%", opacity:0},{x:"0%", duration: 2.2, ease: "expo.out", delay: 3, opacity:1} )
+
+        gsap.fromTo(".navbar",{y:"100%", opacity:0}, {y:"0%", duration: 2.2, ease: "expo.out", delay: 3.2, opacity:1} )
     }, [slider]);
 
 

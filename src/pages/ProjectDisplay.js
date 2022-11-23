@@ -22,13 +22,13 @@ function ProjectDisplay() {
           <div className="project_all">
             <div className="project_content_part">
               <article className="project_description">
-                <h1 className="project_description_h1">{project.name}</h1>
-                <p className="project_description_article">{project.info}</p>
+                <h1 className="project_description_h1 transi1">{project.name}</h1>
+                <p className="project_description_article transi2">{project.info}</p>
                 <div className="home_img_arrow arrowProjects">
                   <span>↓</span>
                 </div>
               </article>
-              <div className="project_content">
+              <div className="project_content transiImg">
                 <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
                 <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
               </div>
