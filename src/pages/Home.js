@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import Navbar from "../components/Navbar";
@@ -6,18 +6,20 @@ import Contact from "../components/Contact";
 import Trombinoscope from "../assets/trombinoscope.png"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
+import TimelineSequence from "../components/TimelineSequence";
 
 function Home() {
   return (
     <div id="home_main" className="home_main">
+      <TimelineSequence />
       <Navbar />
       <div className="top_navbar">
         <p>Based in Brussels</p>
       </div>
       <section className="home_page_presentation">
-        <div className="home">
-          <h2 className="home_title">Front-end</h2>
-          <h2 className="home_title">Developer</h2>
+        <div className="home" >
+          <h2 className="home_title transi1">Front-end</h2>
+          <h2 className="home_title transi2">Developer</h2>
         </div>
         <div className="home_img_content">
           <div className="home_img_arrow">

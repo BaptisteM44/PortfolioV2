@@ -57,7 +57,7 @@
     width: 400px;
 }
 
-@media screen and (max-width : 576px){
+@media screen and (max-width : 768px){
     .contact{
         height: 90vh;
     }
@@ -79,5 +79,8 @@
     }
     .contact_right_p{
         width: auto;
+    }
+    .contact_right_link{
+        font-size: 32px;
     }
 }

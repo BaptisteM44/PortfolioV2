@@ -25,3 +25,8 @@ p{
 .links_navbar::after, .footer_link_item::after{
     transform: scaleX(0);
 }
+@media screen and (max-width : 768px){
+    .footer{
+        font-size: 13px;
+    }
+}

@@ -8,8 +8,11 @@
     top: 40px;
     align-items: center;
     mix-blend-mode: difference;
-    z-index: 10;
     margin: 0px 60px;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 1000;
+    will-change: transform;
 }
 .links{
     display: flex;
@@ -26,12 +29,17 @@
     margin-left: 5px;
 }
 
-@media screen and (max-width : 576px){
+@media screen and (max-width : 768px){
     .navbar{
-        top: 10px;
-        margin: 0px 10px;
+        top: 20px;
+        margin: 0px auto;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .links_navbar{
         font-size: 16px;
+    }
+    .links{
+        width: unset;
     }
 }

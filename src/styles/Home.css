@@ -20,6 +20,10 @@ body{
     font-weight: 400;
     margin: 0px;
     text-transform: uppercase;
+    transform: translateY(100%);
+    opacity: 0;
+    z-index: 100;
+    will-change: transform;
 }
 
 .home_img_content{
@@ -30,16 +34,23 @@ body{
     font-size: 60px;
     font-weight: 600;
     position: absolute;
-    bottom: 0px;
+    bottom: 120px;
     left: 0px;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 100;
+    will-change: transform;
 }
 .home_img_background{
     width: 700px;
     height: 300px;
     background: black;
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
+    transform: translateX(-20%);
+    opacity: 0;
+    will-change: transform;
 }
 .home_img{
     position: absolute;
@@ -99,8 +110,18 @@ body{
     margin: 0px auto;
     width: 100%;
 }
-
-@media screen and (max-width : 576px){
+@media screen and (max-width : 1200px){
+    .top_navbar{
+        margin: 10px 0 0 33%;
+    }
+    .interest_slide{
+        display: none;
+    }
+}
+@media screen and (max-width : 768px){
+    
+}
+@media screen and (max-width : 768px){
     /* .home_page_presentation{
         height: 110vh;
     } */
@@ -118,7 +139,10 @@ body{
     .home_img{
         left: 0px;
     }
-    .top_navbar{
+    .home_img_arrow{
+        bottom: 20px;
+    }
+    .top_navbar, .interest_about{
         display: none;
     }
     .interest{
@@ -128,7 +152,8 @@ body{
         flex-direction: column;
     }
     .interest_prompt{
-        align-self: center;
+        font-size: 22px;
+        margin: 20px 0px;
     }
     .interest_prompt_text{
         width: auto;
@@ -140,6 +165,9 @@ body{
     }
     .interest_skills_item{
         width: auto;
+    }
+    .project_list{
+        margin: auto 0px;
     }
 
   }

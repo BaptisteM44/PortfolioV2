@@ -8,20 +8,26 @@ body{
   background-attachment: fixed; */
   background-color: darkgray;
   color: aliceblue;
+  -webkit-font-smoothing: antialiased;
+}
+body::before{
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://tympanus.net/Development/CSSMarqueeMenu/img/noise.png);
+  content: '';
+    height: 300%;
+    left: -50%;
+    opacity: 0.6;
+    position: fixed;
+    top: -100%;
+    width: 300%;
 }
 section{
   padding-right: 60px;
   padding-left: 60px;
-  border-top: 1px solid red;
 }
-/* .mainPage{
-  padding-left: 40px;
-  padding-right: 40px;
-} */
-
-@media screen and (max-width : 576px){
+@media screen and (max-width : 768px){
   section{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }

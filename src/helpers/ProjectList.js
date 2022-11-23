@@ -9,7 +9,8 @@ export const ProjectList = [
         category: "Vitrine",
         context: "Freelance",
         link: "https://leblaireau-barbier.fr/",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate",
+        info2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
     },
     {
         name: "Le bon pain",
@@ -18,7 +19,8 @@ export const ProjectList = [
         category: "Vitrine",
         context: "Freelance",
         link: "https://baptistem44.github.io/l-autre-pain/",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate",
+        info2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
     },
     {
         name: "Portfolio V1",
@@ -26,7 +28,8 @@ export const ProjectList = [
         date: "2022",
         context: "Freelance",
         category: "Portfolio",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate",
+        info2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
     },
     {
         name: "Social network",
@@ -34,6 +37,7 @@ export const ProjectList = [
         date: "2021",
         context: "Freelance",
         category: "Learn Project",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate",
+        info2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur pariatur ipsum explicabo quia, vitae corporis ipsa voluptatibus perferendis facere mollitia, at provident dolore nisi tempora dolorum dignissimos! Veniam, voluptate"
     },
 ]

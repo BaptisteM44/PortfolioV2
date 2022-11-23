@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import {useLayoutEffect} from 'react';
-import TimelineSequence from "./components/TimelineSequence"
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -18,17 +17,17 @@ function App() {
   return (
     <div className="App">
         <Router>
-          <Wrapper >
-          <main className="mainPage">
-          {/* <TimelineSequence /> */}
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/project/:id" element={<ProjectDisplay />} />
-            </Routes>
-          
-          </main>
-          </Wrapper>
-        </Router>
+            <Wrapper >
+            <main className="mainPage">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/project/:id" element={<ProjectDisplay />} />
+              </Routes>
+            </main>
+            </Wrapper>
+          </Router>  
+      
+        
       
     </div>
   );

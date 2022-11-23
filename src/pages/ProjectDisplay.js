@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import TimelineSequence from "../components/TimelineSequence";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/ProjectDisplay.css";
 
@@ -8,8 +9,10 @@ function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
   const navigate = useNavigate();
+  
   return (
     <div>
+      <TimelineSequence />
       <section className="project_display_sticky">
         <div className="project_display">
         <div className="arrow" onClick={() => navigate(-1)}>
@@ -21,7 +24,7 @@ function ProjectDisplay() {
               <article className="project_description">
                 <h1 className="project_description_h1">{project.name}</h1>
                 <p className="project_description_article">{project.info}</p>
-                <div className="home_img_arrow">
+                <div className="home_img_arrow arrowProjects">
                   <span>↓</span>
                 </div>
               </article>
