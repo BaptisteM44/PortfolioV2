@@ -12,7 +12,7 @@ function ProjectDisplay() {
   
   return (
     <div>
-      <TimelineSequence />
+      {/* <TimelineSequence /> */}
       <section className="project_display_sticky">
         <div className="project_display">
         <div className="arrow" onClick={() => navigate(-1)}>

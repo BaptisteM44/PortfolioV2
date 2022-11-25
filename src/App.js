@@ -17,7 +17,7 @@ const Wrapper = ({children}) => {
 function App() {
   return (
     <div className="App">
-      <TimelineSequence />
+      {/* <TimelineSequence /> */}
         <Router>
         
             <Wrapper >

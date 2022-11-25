@@ -203,9 +203,15 @@ p{
 @media screen and (max-width : 768px){
 
   .projectItem{
-      height: auto;
       flex-direction: column;
       align-items: flex-start;
+      max-height: 165px;
+  }
+  .projectItem_title{
+    font-weight: 400;
+  }
+  .projectItem_page{
+    margin: auto 0;
   }
   .projectItem_details{
     margin-bottom: 0px;

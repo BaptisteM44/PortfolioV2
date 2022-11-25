@@ -1,16 +1,19 @@
 .App {
-  /* font-family: 'Oswald', sans-serif; */
   font-family: 'Satoshi', sans-serif;
   letter-spacing: -.03vw;
 }
 body{
-  /* background: url(../src/assets/nnnoise.svg);
-  background-attachment: fixed; */
   background-color: darkgray;
-  color: aliceblue;
+  color: black;
   -webkit-font-smoothing: antialiased;
 }
-body::before{
+a{
+  color: black;
+}
+*, *::after, *::before {
+  box-sizing: content-box;
+}
+.mainPage::before{
   animation: grain 8s steps(10) infinite;
   background-image: url(https://tympanus.net/Development/CSSMarqueeMenu/img/noise.png);
   content: '';
@@ -20,7 +23,6 @@ body::before{
     position: fixed;
     top: -100%;
     width: 300%;
-    z-index: -10;
 }
 @keyframes grain {
   0%, 100% { transform:translate(0, 0) }

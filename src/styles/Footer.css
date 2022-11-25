@@ -21,6 +21,7 @@ p{
     width: fit-content;
     transition: 0.5s;
     position: relative;
+    color: black;
 }
 .links_navbar::after, .footer_link_item::after{
     transform: scaleX(0);

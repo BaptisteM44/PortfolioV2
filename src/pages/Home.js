@@ -6,7 +6,8 @@ import Contact from "../components/Contact";
 import Trombinoscope from "../assets/trombinoscope.png"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
-// import TimelineSequence from "../components/TimelineSequence";
+
+
 
 function Home() {
   return (
