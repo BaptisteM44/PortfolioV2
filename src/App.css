@@ -6,6 +6,7 @@ body{
   background-color: darkgray;
   color: black;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 a{
   color: black;
@@ -13,7 +14,7 @@ a{
 *, *::after, *::before {
   box-sizing: content-box;
 }
-.mainPage::before{
+/* .mainPage::before{
   animation: grain 8s steps(10) infinite;
   background-image: url(https://tympanus.net/Development/CSSMarqueeMenu/img/noise.png);
   content: '';
@@ -35,7 +36,7 @@ a{
   70% { transform:translate(0%, 15%) }
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
-}
+} */
 section{
   padding-right: 60px;
   padding-left: 60px;
