@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "../styles/Navbar.css";
 function Navbar() {
 
@@ -9,9 +9,9 @@ function Navbar() {
       <Link className="links_navbar" to="/"> Baptiste Morvan </Link>
       </div>
       <div className="links">
-          <a className="links_navbar firstHover" href="#top"> Home </a>
-          <a className="links_navbar firstHover" href="#project">Project</a>
-          <a className="links_navbar firstHover" href="#contact">Contact</a>
+          <Link to="/#top" className="links_navbar firstHover"> Home </Link>
+          <Link to="/#project" className="links_navbar firstHover">Project</Link>
+          <Link to="/#contact" className="links_navbar firstHover">Contact</Link>
       </div>
     </header>
   );
