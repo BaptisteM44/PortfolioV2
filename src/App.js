@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import {useLayoutEffect} from 'react';
-import TimelineSequence from "./components/TimelineSequence";
+// import TimelineSequence from "./components/TimelineSequence";
 
 const Wrapper = ({children}) => {
   const location = useLocation();
