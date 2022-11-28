@@ -1,17 +1,17 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import "../styles/Navbar.css";
 function Navbar() {
 
   return (
     <header id="navbar" className="navbar" >
       <div className="name">
-      <Link className="links_navbar" to="/"> Baptiste Morvan </Link>
+      <HashLink className="links_navbar" to="/#top"> Baptiste Morvan </HashLink>
       </div>
       <div className="links">
-          <Link to="/#top" className="links_navbar firstHover"> Home </Link>
-          <Link to="/#project" className="links_navbar firstHover">Project</Link>
-          <Link to="/#contact" className="links_navbar firstHover">Contact</Link>
+          <HashLink to="/#top" className="links_navbar firstHover"> Home </HashLink>
+          <HashLink to="/#project" className="links_navbar firstHover">Project</HashLink>
+          <HashLink to="/#contact" className="links_navbar firstHover">Contact</HashLink>
       </div>
     </header>
   );
