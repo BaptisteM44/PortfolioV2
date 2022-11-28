@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import {useLayoutEffect} from 'react';
