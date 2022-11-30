@@ -9,7 +9,10 @@ function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
   const navigate = useNavigate();
-  
+
+  if( project.image3 === undefined)
+  return null
+
   return (
     <div>
       <TimelineSequence />
@@ -30,7 +33,7 @@ function ProjectDisplay() {
               </article>
               <div className="project_content transiImg">
                 <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
-                <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
+                <img alt="project_content" className="project_content_img" src={project.image2} width="100%" height="100%" />
               </div>
             </div>
             <div className="project_content_part">
@@ -38,7 +41,7 @@ function ProjectDisplay() {
                 <p className="project_description_article">{project.info}</p>
               </article>
               <div className="project_content">
-                <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
+                <img alt="project_content" className="project_content_img" src={project.image3} width="100%" height="100%" />
               </div>
             </div>
           </div>

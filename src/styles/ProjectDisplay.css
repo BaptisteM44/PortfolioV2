@@ -67,6 +67,11 @@
     display: flex;
     position: relative;
 }
+.project_content_img{
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
 .project_description{
     width: 40%;
     height: 100vh;

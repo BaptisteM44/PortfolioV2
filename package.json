@@ -1,7 +1,7 @@
 {
   "name": "portfoliov2",
   "version": "0.1.0",
-  "homepage": "https://BaptisteM44.github.io/PortfolioV2",
+  "homepage": "https://baptiste-morvan.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
