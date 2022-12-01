@@ -70,8 +70,7 @@
     }
     .contact_left{
         width: 100%;
-        margin: 2em 0em;
-        
+        padding-top: 2em;
     }
     .contact_left_h2{
         font-size: 60px;

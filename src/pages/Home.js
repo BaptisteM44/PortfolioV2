@@ -3,7 +3,7 @@ import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
-import Trombinoscope from "../assets/trombinoscope.png"
+import Trombinoscope from "../assets/trombinoscope.webp"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
 
@@ -44,7 +44,7 @@ function Home() {
         <div className="interest_skills">
           <article className="interest_skills_item">
             <h2>Front-end Development</h2>
-            <p>I am fond of modern applications and new technologies and I have increased real skills especially through my studies as well as a concrete training during this last year with Openclassrooms.</p>
+            <p>I am fond of modern applications and new technologies and I have increased real skills especially through my studies as well as a concrete training with 7 projects during this last year with Openclassrooms.</p>
           </article>
           <article className="interest_skills_item">
             <h2>Creative</h2>

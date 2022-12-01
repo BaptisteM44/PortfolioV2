@@ -95,7 +95,7 @@ body{
     align-self: end;
 }
 .project{
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
