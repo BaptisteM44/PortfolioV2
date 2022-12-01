@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import {useLayoutEffect} from 'react';
-// import TimelineSequence from "./components/TimelineSequence";
+import TimelineSequence from "./components/TimelineSequence";
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -17,8 +17,8 @@ const Wrapper = ({children}) => {
 function App() {
   return (
     <div className="App">
-      {/* <TimelineSequence /> */}
         <Router>
+        <TimelineSequence />
             <Wrapper >
             <main className="mainPage">
               <Routes>

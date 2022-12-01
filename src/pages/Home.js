@@ -8,15 +8,14 @@ import Footer from "../components/Footer";
 import "../styles/Home.css";
 
 
-
 function Home() {
   return (
     <div id="home_main" className="home_main">
-      
       <Navbar />
       <div className="top_navbar">
         <p>Based in Brussels</p>
       </div>
+      
       <section className="home_page_presentation">
         <div className="home" >
           <h2 className="home_title transi1">Front-end</h2>
@@ -37,23 +36,19 @@ function Home() {
             <h2 className="interest_about_title">About</h2>
           </div>
           <div className="interest_prompt">
-            <p className="interest_prompt_text">Hello, i am Baptiste Morvan a front-end developer from Brussels.</p>
-            <p className="interest_prompt_text">Always interested in learning new technologies and new languages</p>
-            <p className="interest_prompt_text">I am looking for a job in Brussels, and I am free as soon as possible.</p>
+            <p className="interest_prompt_text">I am just arriving in Brussels and I am free now for a Web developer job in your company.</p>
+            <p className="interest_prompt_text"> </p>
+            <p className="interest_prompt_text"> </p>
           </div>  
         </div>
         <div className="interest_skills">
           <article className="interest_skills_item">
-            <h2>Titre item</h2>
-            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
+            <h2>Front-end Development</h2>
+            <p>I am fond of modern applications and new technologies and I have increased real skills especially through my studies as well as a concrete training during this last year with Openclassrooms.</p>
           </article>
           <article className="interest_skills_item">
-            <h2>Titre item</h2>
-            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
-          </article>
-          <article className="interest_skills_item">
-            <h2>Titre item</h2>
-            <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users.</p>
+            <h2>Creative</h2>
+            <p>I always strive to learn for create symply appealing websites, functional and distinctive. My preferred tools are more modern javascript libraries like React.js and GSAP. But i love learn more to develop my skills.</p>
           </article>
           <article className="interest_slide">
             <p>My work slide down</p>

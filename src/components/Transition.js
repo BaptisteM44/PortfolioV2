@@ -1,37 +1,28 @@
-// import React, {useRef, useEffect} from 'react'
-// import '../styles/Transition.css'
-// import {Power4} from 'gsap'
+import React, { useEffect } from 'react';
+import '../styles/Transition.css'
+import { gsap } from 'gsap'
 
-// function Transition({timeline}) {
-//     const home = gsap.timeline();
-//     const homeh2 = useRef(null)
-//     const homeimg = useRef(null)
-//     useEffect (() => {
-//         home.from(homeh2.current, {
-//         duration: 1.6,
-//         skewX: 10,
-//         x: -100,
-//         opacity: 0
-//         }, "-=3.5")
-//         home.from(homeimg.current, {
-//         duration: 1.8,
-//         y:-200,
-//         opacity:0
-//         }, "-=3")
-//     })
-//     const trans = useRef(null);
-//     useEffect(() => {
-//         timeline.to(trans.current, {
-//             duration: 4,
-//             x:2500,
-//             ease: Power4.easeOut
-//         });
-//     })
-//     return(
-//         <div>
-//             <div className="transition-effect" ref={trans}></div>
-//         </div>
-//     )
-// }
+function TimelineSequence(props) {
+    const slider = React.createRef();
 
-// export default Transition
+
+    useEffect(() => {
+
+        gsap.fromTo(".slider3", {y:"0%"}, {y:"100%", duration: 2, ease: "expo.out", delay: 1} )
+
+        gsap.fromTo(".transi1", {y:"100%", opacity:0}, {y:"0%", duration: 2.2, ease: "expo.out", delay: 1, opacity:1} )
+        gsap.fromTo(".transi2",{y:"100%", opacity:0},{y:"0%", duration: 2.2, ease: "expo.out", delay: 1.2, opacity:1} )
+        gsap.fromTo( ".home_img_arrow",{y:"100%", opacity:0},{y:"0%", duration: 2.2, ease: "expo.out", delay: 1.4, opacity:1} )
+        gsap.fromTo(".transiImg",{x:"100%", opacity:0},{x:"0%", duration: 2.2, ease: "expo.out", delay: 1.9, opacity:1} )
+    }, [slider]);
+
+
+    return (<>
+
+        <div className="slider3" ref={slider}>
+
+        </div>
+        </>);
+}
+
+export default TimelineSequence

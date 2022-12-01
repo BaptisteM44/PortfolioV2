@@ -1,15 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import Transition from "./Transition";
 
 
 function ProjectItem({name, id, category, date, image}) {
   const navigate = useNavigate();
   return (
-    <div
-      className="projectItem"
-    >
-      {/* <Transition /> */}
+    <div className="projectItem">
       <div className="projectItem_page"
       onClick={() => {navigate("/project/" + id)  ;
       }}>

@@ -65,7 +65,7 @@ function Contact() {
             <article className="contact_right">
                 <h3 className="contact_right_h3">Have a project in mind?</h3>
                 <a className="contact_right_link firstHover" href="mailto:bapmorvan@gmail.com">bapmorvan@gmail.com</a>
-                <p className="contact_right_p">N'hésitez pas à me contacter si vous avez des questions, si vous pensez que nous pourrions travailler ensemble ou si vous souhaitez simplement échanger.</p>
+                <p className="contact_right_p">Don't hesitate to contact me if you have any questions, if you think we could work together or if you just want to chat.</p>
             </article>
             
             
