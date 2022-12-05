@@ -9,6 +9,7 @@ import "../styles/Home.css";
 
 
 function Home() {
+  
   return (
     <div id="home_main" className="home_main">
       <Navbar />

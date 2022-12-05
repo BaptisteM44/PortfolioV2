@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function ProjectItem({name, id, category, date, image}) {
   const navigate = useNavigate();
+  
   return (
     <div className="projectItem">
       <div className="projectItem_page"

@@ -51,10 +51,6 @@ function Contact() {
     })
 }, []);
 
-  
-
-  
-
   return (
     <section id="contact" className="contact" >
         <div className="contact_content">

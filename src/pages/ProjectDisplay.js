@@ -46,10 +46,10 @@ function ProjectDisplay() {
             <p> {project.category}</p>
             <p>/{project.date}</p>
           </div>
-          <div className="project_footer_law">
+          {/* <div className="project_footer_law">
             <p> {project.category}</p>
             <p>/{project.date}</p>
-          </div>
+          </div> */}
           <div className="project_footer_link">
             <a className="project_footer_link_item" target="_blank" rel="noopener noreferrer" href={project.link}> Site in Live</a>  
         </div>
