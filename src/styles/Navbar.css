@@ -16,11 +16,10 @@
     display: flex;
     justify-content: space-between;
     width: auto;
-    color: black;
 }
 .links_navbar {
     text-decoration: none;
-    color: aliceblue;
+    color: #b7b7b7;
     font-size: 22px;
     transition: 0.5s;
     position: relative;

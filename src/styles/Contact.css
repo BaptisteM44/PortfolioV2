@@ -31,7 +31,6 @@
 .contact_right_link{
     font-size: 35px;
     text-decoration: none;
-    color: aliceblue;
     width: fit-content;
     transition: 0.5s;
     position: relative;
@@ -66,7 +65,7 @@
     }
     .contact_content{
         flex-direction: column;
-        justify-content: top;
+        justify-content: center;
     }
     .contact_left{
         width: 100%;
@@ -76,7 +75,7 @@
         font-size: 60px;
         margin-top: 0em;
         margin-block-start: 0em;
-    margin-block-end: 0em;
+        margin-block-end: 0em;
     }
     .contact_right{
         width: 100%;

@@ -3,13 +3,14 @@
   letter-spacing: -.03vw;
 }
 body{
-  background-color: darkgray;
   color: black;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  margin: 0px;
+  background-color: darkgrey;
 }
 a{
-  color: black;
+  text-decoration: none;
 }
 *, *::after, *::before {
   box-sizing: content-box;

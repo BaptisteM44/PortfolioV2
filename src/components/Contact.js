@@ -12,6 +12,25 @@ function Contact() {
 
   useEffect(() => {
     
+
+
+    
+    gsap.from(".contact_left_h2",{
+      y: -220,
+    })
+    gsap.to(".contact_left_h2", {
+      y: 100,
+      duration: 4,
+      
+      scrollTrigger: {
+        ease: "power2.out",
+        trigger: ".contact",
+        scrub: true,
+        start:"center bottom",
+        end:"bottom bottom",
+        delay:2
+      },
+    })
     let mm = gsap.matchMedia();
 
     mm.add("(max-width: 768px)", () => {
@@ -31,24 +50,6 @@ function Contact() {
         },}) // <- normal selector text, automatically scoped to myRefOrElement
     
     },); // <- scope!!!
-
-    
-    gsap.from(".contact_left_h2",{
-      y: -220,
-    })
-    gsap.to(".contact_left_h2", {
-      y: 100,
-      duration: 4,
-      
-      scrollTrigger: {
-        ease: "power2.out",
-        trigger: ".contact",
-        scrub: true,
-        start:"center bottom",
-        end:"bottom bottom",
-        delay:2
-      },
-    })
 }, []);
 
   return (

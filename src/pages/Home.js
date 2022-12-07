@@ -3,10 +3,23 @@ import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
+import ScrollText from "../components/ScrollText";
 import Trombinoscope from "../assets/trombinoscope.webp"
 import Footer from "../components/Footer";
 import "../styles/Home.css";
+import { gsap } from 'gsap'
 
+
+gsap.utils.toArray(".interest").forEach(section => {
+  gsap.from(section.querySelectorAll("h2, p"), {
+    scrollTrigger: section,
+    autoAlpha: 0,
+    y: 0,
+    delay:1.2,
+    duration: 1.75,
+    stagger: 0.25
+  });
+})
 
 function Home() {
   
@@ -31,11 +44,9 @@ function Home() {
           </span>
         </div>
       </section>
+      <ScrollText />
       <section className="interest">
         <div className="interest_first">
-          <div className="interest_about">
-            <h2 className="interest_about_title">About</h2>
-          </div>
           <div className="interest_prompt">
             <p className="interest_prompt_text">I am just arriving in Brussels and I am free now for a Web developer job in your company.</p>
             <p className="interest_prompt_text"> </p>
