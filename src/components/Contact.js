@@ -12,9 +12,6 @@ function Contact() {
 
   useEffect(() => {
     
-
-
-    
     gsap.from(".contact_left_h2",{
       y: -220,
     })
