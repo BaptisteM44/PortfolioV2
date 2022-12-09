@@ -27,7 +27,7 @@ function ProjectDisplay() {
                 </div>
               </article>
               <div className="project_content transiImg">
-                <img alt="project_content" className="project_content_img" src={project.image} width="100%" height="100%" />
+                <img alt="project_content" className="project_content_img" src={project.image} width="300px" height="300px" />
               </div>
             </div>
             <div className="project_content_part">
@@ -35,7 +35,7 @@ function ProjectDisplay() {
                 <p className="project_description_article">{project.info2}</p>
               </article>
               <div className="project_content">
-                <img alt="project_content" className="project_content_img" src={project.image2} width="100%" height="100%" />
+                <img alt="project_content" className="project_content_img" src={project.image2} width="300px" height="300px" />
               </div>
             </div>
           </div>

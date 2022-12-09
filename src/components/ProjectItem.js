@@ -11,7 +11,7 @@ function ProjectItem({name, id, category, date, image}) {
       onClick={() => {navigate("/project/" + id)  ;
       }}>
         <h2 className="projectItem_title menu__item-link">{name}</h2>
-        <img alt="project_content" className="menu__item-img" src={image} width="100%" height="100%" />
+        <img alt="project_content" className="menu__item-img" src={image} width="500px" height="500px" />
       </div>
       <div className="projectItem_details">
         <h2 className="projectItem_info">{category}</h2>

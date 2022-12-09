@@ -28,7 +28,7 @@ function Home() {
             <span>↓</span>
           </div>
           <span className="home_img_background transiImg">
-            <img className="home_img" src={Trombinoscope} alt="Trombinoscope" />
+            <img className="home_img" src={Trombinoscope} alt="Trombinoscope" height="200px" width="200px" />
           </span>
         </div>
       </section>
