@@ -1,6 +1,7 @@
-import React, {useRef, useEffect} from "react";
+import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import ScrollText from "../components/ScrollText";
@@ -10,7 +11,11 @@ import "../styles/Home.css";
 import Fade from 'react-reveal/Fade';
 
 
+
 function Home() {
+
+  const navigate = useNavigate();
+  
   return (
     <div id="home_main" className="home_main">
       <Navbar />
@@ -37,7 +42,7 @@ function Home() {
         <div className="interest_first">
         <Fade delay={600} bottom cascade>
           <div className="interest_prompt">
-            <p className="interest_prompt_text">I am just arriving in Brussels and I am free now for a Web developer job in your company.</p>
+            <p className="interest_prompt_text">I have just arrived in Brussels and I am free now for a Web developer job in your company.</p>
           </div> 
         </Fade> 
         </div>
@@ -45,13 +50,13 @@ function Home() {
           <Fade delay={1000} bottom cascade>
             <article className="interest_skills_item">
               <h2 className="headline">Front-end Development</h2>
-              <p>I am fond of modern applications and new technologies and I have increased real skills especially through my studies as well as a concrete training with 7 projects during this last year with Openclassrooms.</p>
+              <p>I am fond of modern applications and new technologies. I have increased real skills through my studies. I especially appreciated concrete training with 7 projects during this last year with Openclassrooms.</p>
             </article>
             </Fade>
             <Fade delay={1300} bottom cascade>
             <article className="interest_skills_item">
               <h2 className="headline">Creative</h2>
-              <p>I always strive to learn for create symply appealing websites, functional and distinctive. My preferred tools are more modern javascript libraries like React.js and GSAP. But i love learn more to develop my skills.</p>
+              <p>I always strive to create simply appealing websites, as well as functional and distinctive. My favorite tools are modern javascript libraries like React and GSAP. I love learning and searching to develop my skills.</p>
             </article>
             </Fade>
             <Fade delay={1600} bottom cascade>
@@ -59,23 +64,18 @@ function Home() {
               <p className="headline">My work slide down</p>
             </article>
             </Fade>
-          </div>  
-        
-        
-        
+          </div>
       </section>
-      <Fade delay={600} bottom cascade>
       <section id="project" className="project">
         <div className="project_list">
         
-          {ProjectList.map((project, idx) => {
+          {ProjectList.map((project) => {
             return (
-              <ProjectItem id={idx} name={project.name} image={project.image} category={project.category} date={project.date} />
+              <ProjectItem id={project.id} name={project.name} image={project.image} category={project.category} date={project.date} onClick={() => navigate(`project/${project.id}`)} />
             );
           })}
         </div>  
       </section>
-      </Fade>
       <Contact />
       <Footer />
       

@@ -8,7 +8,7 @@
     top: 38px;
     align-items: center;
     mix-blend-mode: difference;
-    margin: 0px 60px;
+    margin: 0px 8em;
     z-index: 1000;
     will-change: transform;
 }

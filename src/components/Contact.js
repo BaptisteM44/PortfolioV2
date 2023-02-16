@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
   const contactEffect = useRef(null)
+  const contactRef = useRef(null);
 
   useEffect(() => {
     
@@ -50,7 +51,7 @@ function Contact() {
 }, []);
 
   return (
-    <section id="contact" className="contact" >
+    <section ref={contactRef} id="contact" className="contact" >
         <div className="contact_content">
             <div className="contact_left">
                 <h2 ref={contactEffect} className="contact_left_h2">Get in</h2>

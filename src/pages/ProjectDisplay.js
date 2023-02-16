@@ -1,22 +1,22 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import Transition from "../components/Transition";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/ProjectDisplay.css";
 
 function ProjectDisplay() {
   const { id } = useParams();
-  const project = ProjectList[id];
+  const project = ProjectList.find((p) => p.id === id);
   const navigate = useNavigate();
   return (
     <div>
        <Transition />
       <section className="project_display_sticky">
         <div className="project_display">
-        <div className="arrow" onClick={() => navigate(-1)}>
-          <div class="arrow-top"></div>
-          <div class="arrow-bottom"></div>
-        </div>
+        <Link className="arrow" onClick={() => navigate(-1)}>
+          <div className="arrow-top"></div>
+          <div className="arrow-bottom"></div>
+        </Link>
           <div className="project_all">
             <div className="project_content_part">
               <article className="project_description">
@@ -46,14 +46,9 @@ function ProjectDisplay() {
             <p> {project.category}</p>
             <p>/{project.date}</p>
           </div>
-          {/* <div className="project_footer_law">
-            <p> {project.category}</p>
-            <p>/{project.date}</p>
-          </div> */}
           <div className="project_footer_link">
-            <a className="project_footer_link_item" target="_blank" rel="noopener noreferrer" href={project.link}> Site in Live</a>  
+            <a className="project_footer_link_item" target="_blank" rel="noopener noreferrer" href={project.link}>⇲ Site</a>  
         </div>
-        
       </footer> 
       
     </div>

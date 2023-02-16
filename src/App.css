@@ -12,6 +12,24 @@ body{
 a{
   text-decoration: none;
 }
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
 *, *::after, *::before {
   box-sizing: content-box;
 }
@@ -39,12 +57,12 @@ a{
   90% { transform:translate(-10%, 10%) }
 }
 section{
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 8em;
+  padding-left: 8em;
 }
 @media screen and (max-width : 768px){
   section{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }

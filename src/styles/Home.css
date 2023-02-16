@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: fit-content;
 }
 .home_page_presentation{
     height: 100vh;
@@ -48,6 +49,7 @@
 .home_img{
     position: absolute;
     height: 100%;
+    width: auto;
     top: 0;
     right: 225px;
     filter: grayscale(0.8);
@@ -103,12 +105,6 @@
     }
 }
 @media screen and (max-width : 768px){
-    
-}
-@media screen and (max-width : 768px){
-    /* .home_page_presentation{
-        height: 110vh;
-    } */
     .home{
         justify-content: end;
     }
@@ -119,6 +115,7 @@
         width: 350px;
         height: 200px;
         top: 25px;
+        right: -5px;
     }
     .home_img{
         left: 22%;

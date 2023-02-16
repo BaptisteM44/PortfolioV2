@@ -1,17 +1,30 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 import "../styles/Navbar.css";
+
 function Navbar() {
 
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <header id="navbar" className="navbar" >
+    <header id="navbar" className="navbar">
       <div className="name">
-      <HashLink className="links_navbar" to="/#top"> Baptiste Morvan </HashLink>
+        <a className="links_navbar" onClick={() => scrollToElement("home_main")}>Baptiste Morvan</a>
       </div>
       <div className="links">
-          <HashLink to="/#top" className="links_navbar firstHover">Home</HashLink>
-          <HashLink to="/#project" className="links_navbar firstHover">Project</HashLink>
-          <HashLink to="/#contact" className="links_navbar firstHover">Contact</HashLink>
+        <a className="links_navbar firstHover" onClick={() => scrollToElement("home_main")}>
+          Home
+        </a>
+        <a className="links_navbar firstHover" onClick={() => scrollToElement("project")}>
+          Projects
+        </a>
+        <a className="links_navbar firstHover" onClick={() => scrollToElement("contact")}>
+          Contact
+        </a>
       </div>
     </header>
   );

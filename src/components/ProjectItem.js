@@ -8,8 +8,7 @@ function ProjectItem({name, id, category, date, image}) {
   return (
     <div className="projectItem">
       <div className="projectItem_page"
-      onClick={() => {navigate("/project/" + id)  ;
-      }}>
+      onClick={() => navigate(`/project/${id}`)}>
         <h2 className="projectItem_title menu__item-link">{name}</h2>
         <img alt="project_content" className="menu__item-img" src={image} width="500px" height="500px" />
       </div>
