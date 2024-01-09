@@ -4,7 +4,7 @@ import Proj2 from "../assets/proj2.webp";
 
 import Proj6 from "../assets/proj6.jpeg";
 
-import Proj7 from "../assets/bumpak.mov";
+import Proj7 from "../assets/bumpak.gif";
 
 export const ProjectList = [
     {
