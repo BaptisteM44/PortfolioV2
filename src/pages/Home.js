@@ -42,7 +42,7 @@ function Home() {
         <div className="interest_first">
         <Fade delay={600} bottom cascade>
           <div className="interest_prompt">
-            <p className="interest_prompt_text">I have just arrived in Brussels and I am free now for a Web developer job in your company.</p>
+            <p className="interest_prompt_text">As a freelance web developer based in Brussels, I am open to exciting collaborations, whether for independent projects or roles within your company.</p>
           </div> 
         </Fade> 
         </div>
@@ -50,7 +50,7 @@ function Home() {
           <Fade delay={1000} bottom cascade>
             <article className="interest_skills_item">
               <h2 className="headline">Front-end Development</h2>
-              <p>I am fond of modern applications and new technologies. I have increased real skills through my studies. I especially appreciated concrete training with 7 projects during this last year with Openclassrooms.</p>
+              <p>As a web integrator and frontend developer, I am able to solve most web-related problems. My goal is to create innovative and useful web applications while continuing to improve my skills to deliver superior quality to every project I participate in.</p>
             </article>
             </Fade>
             <Fade delay={1300} bottom cascade>

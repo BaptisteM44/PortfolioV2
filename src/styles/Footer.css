@@ -25,6 +25,9 @@ p{
     position: relative;
     color: black;
 }
+.footer_link_item:hover{
+    color: #dd2727;
+}
 .links_navbar::after, .footer_link_item::after{
     transform: scaleX(0);
 }

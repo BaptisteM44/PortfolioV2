@@ -11,15 +11,15 @@ body{
 }
 a{
   text-decoration: none;
+  cursor: pointer;
 }
-
 .fade-enter {
   opacity: 0;
 }
 
 .fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 1500ms;
 }
 
 .fade-exit {
@@ -28,8 +28,16 @@ a{
 
 .fade-exit-active {
   opacity: 0;
-  transition: opacity 300ms;
+  transition: opacity 1500ms;
 }
+.mainPage {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.mainPage.animate {
+  transform: translateX(-0%);
+}
+
 *, *::after, *::before {
   box-sizing: content-box;
 }

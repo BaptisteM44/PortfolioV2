@@ -36,6 +36,10 @@
     position: relative;
     color: black;
 }
+.contact_right_link:hover{
+  color: peachpuff;  
+}
+
 .firstHover:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -50,7 +54,8 @@
     background: black;
     transform: scaleX(0.3);
     transform-origin: left;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
+    
 }
 .contact_right_p{
     font-size: 22px;

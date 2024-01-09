@@ -1,63 +1,17 @@
-.project_display_sticky{
-    overflow: scroll;
-}
 .project_display{
-    height: 90vh;
+    height: 100vh;
 }
   .arrow {
     cursor: pointer;
-    height: 120px;
-    left: 70px;
-    top: 0px;
     position: absolute;
-    transform: translateX(-50%) translateY(-50%);
+    top: 2em;
+    left: 6em;
     transition: transform 0.1s;
     width: 20px;
     z-index: 100;
     color: aliceblue;
-    transform: rotate(180deg);
-  }
-  .arrow-top, .arrow-bottom {
-    background-color: rgb(255, 255, 255);
-    height: 2px;
-    left: 0px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-  }
-  .arrow-top:after, .arrow-bottom:after {
-    background-color: rgb(0, 0, 0);
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition: all 0.15s;
-  }
-  .arrow-top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
-  }
-  .arrow-top:after {
-    left: 100%;
-    right: 0;
-    transition-delay: 0s;
-  }
-  .arrow-bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-  }
-  .arrow-bottom:after {
-    left: 0;
-    right: 100%;
-    transition-delay: 0.15s;
-  }
-  .arrow:hover .arrow-top:after {
-    left: 0;
-    transition-delay: 0.15s;
-  }
-  .arrow:hover .arrow-bottom:after {
-    right: 0;
-    transition-delay: 0s;
+    transform: rotate(90deg);
+    font-size: 22px;
   }
 .project_all{
     height: auto;
@@ -74,13 +28,10 @@
 }
 .project_description{
     width: 40%;
-    height: 100vh;
-    margin-top: 2em;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: sticky;
-    top: 0;
+    justify-content: end;
 }
 .project_description_h1{
     font-size: 40px;
@@ -90,15 +41,14 @@
     width: 80%;
     font-size: 22px;
     font-weight: 200;
+    margin: 1em 0;
 }
 .project_content{
   width: 60%;
   height: auto;
-  margin-top: 40px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 .projectItem{
     display: flex;
@@ -143,7 +93,7 @@ width: auto;
 	max-height: 400px;
   max-width: 500px;
 	opacity: 0;
-	left: 100%;
+	left: 90%;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
   transition: all 0.4s;
 }
@@ -152,12 +102,11 @@ width: auto;
 	opacity: 1;
 	transform: translate3d(calc(-100% - 6vw),-30%,0);
 	transition: all 0.4s;
+  z-index: 100;
 }
 .projectItem_details{
     align-items: center;
-    width: 5%;
     align-self: end;
-    margin-bottom: 20px;
 }
 .projectItem_info{
     font-size: 22px;
@@ -173,16 +122,16 @@ width: auto;
     background: no-repeat;
 }
 .project_footer{
-    height: 10vh;
+    height: 9vh;
     font-size: 22px;
     font-weight: 300;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 40px;
-    right: 40px;
     justify-content: space-between;
     display: flex;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-top: 1px solid ;
+    z-index: 1000;
 }
 p{
     margin-block-start: 0em;
@@ -191,6 +140,7 @@ p{
 .project_footer_link{
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 }
 .project_footer_link_item{
     margin: 0 5px;
@@ -221,20 +171,22 @@ p{
     padding-left: 5px;
   }
   .arrow{
-    left: 20px;
-    bottom: 0px;
-    top: unset;
-    height: 80px;
+    display: none;
+    left: 30px;
+    font-size: 22px;
+    bottom: 28px;
   }
   .project_display{
-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
   }
   .project_content_part{
     display: flex;
     flex-direction: column-reverse;
   }
   .project_content{
-    width: 80%;
+    width: 95%;
     margin: 20px auto;
   }
   .menu__item-img{
@@ -256,13 +208,28 @@ flex-direction: column;
   .project_description_h1{
     font-size: 22px;
   }
-  .arrowProjects{
-    display: none;
+  .arrow1 {
+    cursor: pointer;
+    transition: transform 0.1s;
+    width: 20px;
+    z-index: 100;
+    color: aliceblue;
+    transform: rotate(90deg);
+    font-size: 22px;
   }
   .project_footer{
+    font-size: 15px;
     width: 100%;
     justify-content: space-around;
-    left: 0px;
-    right: 0px;
+    /* background-color: darkgray; */
+    padding-left: 0em;
+    padding-right: 0em;
+    
   }
+}
+@media screen and (min-width : 768px){
+  .arrow1 {
+    display: none;
+  }
+
 }

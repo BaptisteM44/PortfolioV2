@@ -9,12 +9,12 @@ function Footer() {
         <p>all rights reserved</p>
       </div>
       <div className="footer_link">
-        <a className="footer_link_item firstHover" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/baptiste-morvan-88894391">Linkedin</a>
-        <a className="footer_link_item firstHover" target="_blank" rel="noopener noreferrer" href="https://twitter.com/baptir">Twitter</a>
-        <a className="footer_link_item firstHover" target="_blank" rel="noopener noreferrer" href="https://github.com/BaptisteM44">Github</a>  
+        <a className="footer_link_item" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/baptiste-morvan-88894391">Linkedin</a>
+        <a className="footer_link_item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/baptir">Twitter</a>
+        <a className="footer_link_item" target="_blank" rel="noopener noreferrer" href="https://github.com/BaptisteM44">Github</a>  
       </div>
       <div className="footer_law">
-        <p> &copy; 2022</p>
+        <p> &copy; 2024</p>
       </div>
     </section>
   );

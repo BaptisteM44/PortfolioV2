@@ -38,7 +38,7 @@ function ScrollText(props) {
             <div className="rolling">
                 <div className="wrapperRollingText">
                     <div className="rollingText text" ref={ScrollText}>
-                        HTML - CSS - SASS - JAVASCRIPT - REACT - VUEJS - GSAP
+                    REACT.JS - HTML - CSS - SASS - JAVASCRIPT - GSAP
                     </div>
                 </div>
 

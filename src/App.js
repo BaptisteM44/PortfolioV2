@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from "react-router-d
 import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import {useLayoutEffect} from 'react';
-import TimelineSequence from "./components/TimelineSequence";
+import TimelineSequence from './components/TimelineSequence';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
         <Router>
-        <TimelineSequence />
+          <TimelineSequence />
             <Wrapper >
             <main className="mainPage">
               <Routes>

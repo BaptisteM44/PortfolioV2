@@ -7,7 +7,6 @@
     position: sticky;
     top: 38px;
     align-items: center;
-    mix-blend-mode: difference;
     margin: 0px 8em;
     z-index: 1000;
     will-change: transform;
@@ -19,12 +18,18 @@
 }
 .links_navbar {
     text-decoration: none;
-    color: #b7b7b7;
+    color: black;
     font-size: 22px;
     transition: 0.5s;
     position: relative;
     width: fit-content;
     padding-right: 5px;
+}
+.links_navbar:hover{
+    color: powderblue;
+}
+.links_navbar1:hover{
+    color: khaki;
 }
 
 @media screen and (max-width : 768px){
